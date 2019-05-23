@@ -1,0 +1,61 @@
+﻿@model ELearningProject.Models.EditProfileViewModel
+@using (Ajax.BeginForm("EPChangePassword", "Account", "", new AjaxOptions { UpdateTargetId = "changePassRes" }, new { @class = "EP__changePassForm" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div class="EP__form__row">
+        <label class="EP__form__label">
+            Current Password
+        </label>
+        <div class="EP__form__input">
+            @Html.EditorFor(m => m.CurrentPassword, new { htmlAttributes = new { @id = "Currentpass" } })
+        </div>
+        <div id="Inform_right" class="checkPass__EP__right inviCheckPass_inform">
+            <p>Your Password is correct</p>
+            <div class="EP__successCheck"></div>
+        </div>
+        <div id="Inform_wrong" class="checkPass__EP__wrong inviCheckPass_inform">
+            <p>Your Password is wrong</p>
+            <div class="EP__failCheck"></div>
+        </div>
+    </div>
+    <div class="EP__form__row">
+        <label class="EP__form__label">
+            New Password
+        </label>
+        <div class="EP__form__input">
+            @Html.EditorFor(m => m.NewPassword)
+            @Html.ValidationMessageFor(m => m.NewPassword)
+        </div>
+    </div>
+    <div class="EP__form__row">
+        <label class="EP__form__label">
+            Confirm new Password
+        </label>
+        <div class="EP__form__input">
+            @Html.EditorFor(m => m.ConfirmPassword)
+            @Html.ValidationMessageFor(m => m.ConfirmPassword)
+
+        </div>
+
+    </div>
+    <div class="EP__form__row">
+        <label class="EP__form__label">
+        </label>
+        <div class="EP__form__input">
+            <a class="forgerPass">
+                Forget your password?
+            </a>
+        </div>
+    </div>
+    <div class="EP__form__row">
+        <label class="EP__form__label">
+        </label>
+        <div class="EP__form__input">
+            <button id="ChangePass" class="EP__submit">Change Pass</button>
+        </div>
+    </div>
+    <div id="changePassRes">
+
+    </div>
+}

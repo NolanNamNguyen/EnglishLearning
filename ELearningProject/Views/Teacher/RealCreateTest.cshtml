@@ -1,0 +1,286 @@
+﻿@model ELearningProject.Models.CreateMixTestViewModel
+@{
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+<section class="CreateTest__BigContainer">
+    <div class="Test__EditSection">
+        @using (Ajax.BeginForm("CreateMixTest", "Teacher", "", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "response" }, new { id = "Test_Contain", @class = "Test", enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            <div id="myTest" class="quesDirection">
+                <h3 id="Choose__Ques" class="invi__test__title">
+                    Choose Ques:
+                </h3>
+            </div>
+            <div class="Test__title__div invi__test__title">
+                @Html.EditorFor(m => m.Test_title, new { htmlAttributes = new { id = "Test__title__input", @class = "effect_2_create", @placeholder = "Please inpu your test title" } })
+                @*<input id="Test__title__input" class="effect_2_create" placeholder="Please inpu your test title" />*@
+                <span class="focus-border"></span>
+            </div>
+            <h1 class="Please__insert__ques">Please insert the question to your test</h1>
+            <div id="appendmyQuesid" class="upload__test__imageSection invi__test__title">
+                <div class="TestImage__preview">
+                    <img id="Test__image" />
+                    @*<img src="~/Content/Images/avatar.jpg" />*@
+                </div>
+                @Html.TextBoxFor(m => m.File, new { id = "Test__image__upload", type = "file", placeholder = Html.DisplayNameFor(m => m.File) })
+                @*<input id="Test__image__upload" name="Test__image__upload" type="file" />*@
+                <div class="Test_descriptionDiv">
+                    @Html.TextAreaFor(m => m.Test_desc, new { @class = "Test__desc", @placeholder = "Input your Test Description", id = "myTest__desc" })
+                    @*<textarea id="myTest__desc" class="Test__desc" placeholder="Input your Test Description"></textarea>*@
+                </div>
+            </div>
+            <div class="Post__createTest__section invi__test__title">
+                <button id="Create__myTest" type="submit" class="test__button__create__Test btnPush edit__test">
+                    Create Test
+                </button>
+            </div>
+        }
+        @*<div id="Test_Contain" class="Test">
+
+            </div>*@
+        <div id="response">
+
+        </div>
+        <div id="QuizType__Create__contain" class="QuizType__Create__contain">
+
+        </div>
+    </div>
+    <div class="line__between">
+
+    </div>
+    <div class="Ques__choose__seciton">
+        <div id="PuzzleQues__create" class="Ques__chose__item Puzzle__Type">
+            <img src="~/Content/Images/puzzle-svgrepo-com.svg" />
+            <p>Puzzle Type</p>
+        </div>
+        <div id="QuizQues__create" class="Ques__chose__item Quiz__Type">
+            <img src="~/Content/Images/QuizIcon.svg" />
+            <p>Quiz Type</p>
+        </div>
+        <div id="AnotherGame" class="Ques__chose__item anothergame__create">
+            <img src="~/Content/Images/gamePlaystationIcon.svg" />
+            <p>Game Incoming</p>
+        </div>
+    </div>
+</section>
+
+@*function được triggered khi click vào muốn tạo loại Quiz, thực hiện công việc gọi 1 action ở TeacherC để render ra 1 cái partial view*@
+<script>
+    $(function () {
+        $("#QuizQues__create").click(function () {
+            $.ajax({
+                url: "@Url.Action("SendFormQuizQues","Teacher")",
+                data: "",
+                type: "POST",
+                cache: false,
+                success: function (response) {
+                    $("#QuizType__Create__contain").css("display", "flex");
+                    $("#QuizType__Create__contain").append(response);
+                    $("#QuizType__Create__contain").animate({
+                        left: '0',
+                        opacity: '1'
+                    });
+                    setTimeout(function () {
+                        $(".Please__insert__ques").remove();
+                    }, 500);
+                    setTimeout(function () {
+                        $(".Test__title__div").removeClass("invi__test__title");
+                    }, 500);
+                    setTimeout(function () {
+                        $("#Choose__Ques").removeClass("invi__test__title");
+                    }, 500);
+                    setTimeout(function () {
+                        $(".Post__createTest__section").removeClass("invi__test__title");
+                    }, 500);
+                    setTimeout(function () {
+                        $(".upload__test__imageSection").removeClass("invi__test__title");
+                    }, 500);
+                    $("#Test_Contain").animate({
+                        left: '-13%',
+                        opacity: '0'
+                    });
+                    setTimeout(function () {
+                        $("#Test_Contain").css("display", "none");
+                    }, 500);
+                },
+                error: function () {
+                    alert("ajax fucking failed");
+                }
+            })
+        })
+    })
+</script>
+@*function được triggered khi click vào muốn tạo loại Quiz, thực hiện công việc gọi 1 action ở TeacherC để render ra 1 cái partial view*@
+
+
+@*bên cái QuizTypeCreate.cshtml có 1 cái Ajaxform đây là cái function được triggered sau khi Ajaxform đó submit thành công*@
+<script>
+    var i = 1;
+    var displayi = 1;
+    function AddToTest() {
+        var myQuesID = $("#myfuckingID").text();
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("RedirectQues", "Teacher")",
+            cache: false,
+            data: { QuesId: myQuesID },
+            success: function (res) {
+                $("#myTest").after(res);
+                $("#Test_Contain").css("display", "flex");
+                $("#Test_Contain").animate({
+                    left: '0',
+                    opacity: '1'
+                });
+                $("#QuizType__Create__contain").animate({
+                    left: '-13%',
+                    opacity: '0'
+                });
+                setTimeout(function () {
+                    $("#QuizType__Create__contain").empty();
+                    $("#QuizType__Create__contain").css("display", "none");
+                }, 500);
+                //setid to navigate the question
+                var navId = $("#getAllQuesId").parent().attr("id") + i;
+                var newQues = `<a id="${navId}" class="ques__created__item">${displayi}</a>`;
+                $("#myTest").append(newQues);
+                displayi = displayi + 1;
+                //setid to navigate the question
+
+            },
+            error: function () {
+                alert("Ajax failed");
+            }
+        })
+    }
+</script>
+@*bên cái QuizTypeCreate.cshtml có 1 cái Ajaxform đây là cái function được trigger sau khi Ajaxform đó submit thành công*@
+
+@*đây là function khi click vào số câu hỏi để hiển thị câu tương ứng*@
+<script>
+    $(function () {
+        $("#myTest").on("click", function () {
+            let myDiv = event.target.closest(".ques__created__item");
+            $(".ques__created__item").removeClass("Ques__active");
+            $(myDiv).addClass("Ques__active");
+            var myQuesId = $(myDiv).attr("id").slice(0, -1);
+            $(".data__Content__MultiChoice_create").addClass("invi__data__Content__MultiChoice_create");
+            $(`#${myQuesId}`).removeClass("invi__data__Content__MultiChoice_create");
+        })
+    })
+</script>
+
+@*đây là function khi click vào số câu hỏi để hiển thị câu tương ứng*@
+
+@*Loop through all question element testing*@
+<script>
+    $(function () {
+        $("#imTest").click(function () {
+            $(".data__Content__MultiChoice_create").each(function (i, obj) {
+                alert($(this).attr("id"));
+            })
+        })
+    })
+</script>
+@*Loop through all question element testing*@
+
+@*Ajax call with token*@
+<script type="text/javascript">
+                $("#testingisreal").click(function () {
+                    var token = $('input[name="__RequestVerificationToken"]').val();
+                    $.ajax({
+                        url: "@Url.Action("Testing","Teacher")",
+                        data: {
+                            __RequestVerificationToken: token,
+                            someValue: "abc",
+                        },
+                        type: "POST",
+                        success: function (data) {
+                            alert(data);
+                        },
+                        error: function () {
+                            alert("ajax failed")
+                        }
+                    })
+
+                })
+</script>
+@*Ajax call with token*@
+
+@*Preview Test Image*@
+<script>
+    $(function () {
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#Test__image').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#Test__image__upload").change(function () {
+            readURL(this);
+        });
+    })
+</script>
+@*Preview Test Image*@
+
+<script>
+    $(function () {
+        $("#Create__myTest").click(function () {
+            $(".data__Content__MultiChoice_create").each(function (i, obj) {
+                var quesid = $(this).attr("id");
+                var quesElement = `<input type="text" name="ListQuesId" class="invi__test__title" value="${quesid}" />`
+                $("#appendmyQuesid").after(quesElement);
+            })
+        })
+    })
+</script>
+
+
+
+@*Create Test Ajax call with Token*@
+
+@* EXAMPLE OF AJAX USING FORM DATA *@
+@*$("#Create__myTest").click(function () {
+
+        var files = $("#Test__image__upload").get(0).files;
+        var Test_title = $("#Test__title__input").val();
+        var Test_desc = $("#myTest__desc").val();
+        var listQuesId = new Array();
+        $(".data__Content__MultiChoice_create").each(function (i, obj) {
+            listQuesId.push($(this).attr("id"))
+        })
+        var token = $('input[name="__RequestVerificationToken"]').val();
+        var myForm = new FormData();
+        myForm.append("__RequestVerificationToken", token);
+        myForm.append("files", files[0],);
+        myForm.append("Test_title", Test_title);
+        myForm.append("Test_desc", Test_desc);
+        myForm.append("listQuesId", listQuesId);
+        console.log(files[0]);
+        $.ajax({
+            url: "@Url.Action("CreateMixTest","Teacher")",
+            cache: false,
+            contentType: false,
+            data: {
+                __RequestVerificationToken: token,
+                files: files[0],
+                Test_title: Test_title,
+                Test_desc: Test_desc,
+                listQuesId: listQuesId
+            },
+            //data: myForm,
+            type: "POST",
+            success: function (res) {
+                $(".Ques__choose__seciton").append(res);
+            },
+            error: function () {
+                alert("Ajax Failed")
+            }
+        })
+    })*@
+@* EXAMPLE OF AJAX USING FORM DATA *@
+
+@*Create Test Ajax call with Token*@

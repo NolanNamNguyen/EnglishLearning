@@ -1,0 +1,86 @@
+﻿@model ELearningProject.Models.ExternalLoginConfirmationViewModel
+@{
+    /**/
+
+    ViewBag.Title = "Confirm your login information";
+    Layout = null;
+}
+<style>
+    .label {
+        font-size: 1.6rem;
+    }
+
+    .checkmark {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+
+    .confirm__form {
+        left: 40%;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/Content/loginstyle.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="position: relative">
+        <div class="login" style="flex-basis:84rem">
+            <img src="~/Content/Images/logo2.svg" alt="" class="login__logo mb-5">
+            <h1 style="font-size:22px">Associate your @ViewBag.LoginProvider account.</h1>
+            <p style="font-size:20px">
+                You've successfully authenticated with <strong>@ViewBag.LoginProvider</strong>.
+                Please enter a user name for this site below and click the Register button to finish
+                logging in.
+            </p>
+            <div style="position: absolute; left: 39.5%; top: 53%">
+                @using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div id="something">
+                        @Html.ValidationSummary(true, "", new { @class = "label" })
+                        <br />
+                        <div>
+                            @Html.LabelFor(m => m.Email, new { @class = "label" })
+                            <span>&nbsp;&nbsp;&nbsp;</span>
+                            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "login__input", @placeholder = "Email" } })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "label" })
+                        </div>
+                        <br>
+                        <div>
+                            @Html.LabelFor(m => m.AsTeacher, new { @class = "label" })
+                            <span>&nbsp;&nbsp;&nbsp;</span>
+                            <span>@Html.EditorFor(m => m.AsTeacher, new { htmlAttributes = new { @class = "checkmark" } })</span>
+                            @Html.ValidationMessageFor(m => m.AsTeacher, "", new { @class = "label" })
+                        </div>
+                        <br />
+                        <div class="form-group" style="position: absolute; left: 15.5%">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" class="login__submit" value="Register" />
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="login__break" style="margin-top: 22rem">&nbsp;</div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,237 @@
+﻿@using ELearningProject.Models
+@model CreateTestViewModel
+
+@{
+    ViewBag.Title = "CreateTest";
+    Layout = "~/Views/Shared/_CreateTest.cshtml"; ;
+}
+<head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link href="~/Content/StyleTeacher.css" rel="stylesheet" />
+</head>
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Add Test!</h2>
+        <a class="close" href="#">&times;</a>
+        <br />
+        <br />
+        <div class="content">
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Test Name" />
+                <input name="tags" type="text" class="feedback-input" placeholder="Tags" />
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <div>
+                    <div class="group">
+                        <input type="text" id="txtImage">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Image Link: </label>
+                    </div>
+                </div>
+                @*<div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                            Type:
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" data-value="puzzlegame" class="ttype">Puzzel Game</a></li>
+                            <li role="presentation"><a role="menuitem" data-value="multiplechoice" class="ttype">Multipie Choice</a></li>
+                            <li role="presentation"><a role="menuitem" data-value="translating" class="ttype">Translating</a></li>
+                        </ul>
+                    </div>*@
+                <div>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <select id="tType">
+                        <option value="0" class="ttype">Type:</option>
+                        @foreach (var type in Model.Types)
+                        {
+                            <option value="@type.id" class="ttype">@type.Name</option>
+                        }
+                    </select>
+                    <button onclick="TypeTest()" style="height:2px">Find</button>
+                </div>
+                <br />
+                <br />
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </div>
+    </div>
+</div>
+<div class="txtcontainer">
+    <div class="addQcontent">
+        <div class="addQwrapper">
+            <a href="#popup1" class="addbtn buttonpopup">Add New Question</a>
+        </div>
+    </div>
+</div>
+<div id="Questions">
+    <div id="divPuzzQuest" hidden>
+        @foreach (var quest in Model.PuzzQuestions)
+        {
+            <div class="container-fluid" style="clear:both">
+                <div class="col-md-5" style="clear">
+                    <br />
+                    <span>
+                        <video width="340" height="260" controls>
+                            <source src="@quest.Content" type="video/mp4" />
+                        </video>
+                    </span>
+                    <hr />
+                </div>
+                <div class="col-md-7" style="clear">
+                    <br />
+                    <br />
+                    <h3 style="font-size:21px">@quest.Answer</h3>
+                    <br />
+                    <br />
+                    <div>
+                        <input type="button" name="btnAdd" id="btnAdd+@quest.id" value="Add" class="button-three" onclick="ClickEv(@quest.id.ToString())" />
+                        <!--input type="button" name="btnDel" id="btnDel+@quest.id" value="Delete" class="btn btn-success" onclick="" disabled /-->
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div id="divMultQuest" hidden>
+        @foreach (var quest in Model.MultQuestions)
+        {
+            <div>
+                <h2>@quest.Content</h2>
+                <h3>A.@quest.Quiz.Quiz1</h3>
+                <h3>B.@quest.Quiz.Quiz2</h3>
+                <h3>C.@quest.Quiz.Quiz3</h3>
+                <h3>D.@quest.Quiz.Quiz4</h3>
+            </div>
+            <div>
+                <input type="button" name="btnAdd" id="btnAdd+@quest.id" value="Add" class="button-three" onclick="ClickEv(@quest.id.ToString())" />
+                <!--input type="button" name="btnDel" id="btnDel+@quest.id" value="Delete" class="btn btn-success" onclick="" disabled /-->
+            </div>
+        }
+    </div>
+</div>
+<div>
+    <b></b>
+
+    <div class="content">
+        <div class="button_container">
+            <div class="button_su">
+                <span class="su_button_circle">
+                </span>
+                <a href="#" class="button_su_inner" onclick="SaveFunc(@Model.TeacherId)">
+                    <input class="button_text_container" style="bottom: 29px; right: 35px; color:white;" onclick="SaveFunc(@Model.TeacherId)">Save</input>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function SingleQuestionAddViewModel(teacherId, questionId, submit, TestName, order, TestType, Image, Tags) {
+        this.teacherId = parseInt(teacherId);
+        this.questionId = parseFloat(questionId);
+        this.submit = Boolean(submit);
+        this.TestName = TestName;
+        this.order = order;
+        this.TestType = parseInt(TestType);
+        this.Image = Image;
+        this.Tags = GetJsonTag(Tags);
+    }
+
+    function GetJsonTag(TagStr) {
+        TagStr = TagStr.toString();
+        TagStr = TagStr.split("#");
+        var rtrstr = [];
+        for (let i = 0; i < TagStr.length; i++) {
+            var temp = TagStr[i].trim();
+            if (temp.length != 0)
+                rtrstr.push(temp);
+        }
+        return JSON.stringify(rtrstr);
+    }
+
+    //function CheckJson() {
+    //    console.log(GetJsonTag(document.getElementById("txtTags").value))
+    //}
+
+    function ClickEv(e) {
+        $.ajax({
+            url: '@Url.Action("SubmitTest", "Teacher")',
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(new SingleQuestionAddViewModel(@Model.TeacherId, e, false, "", 0, 0, "", "")),
+            success: function () {
+                console.log("Add successful");
+            }
+        })
+        document.getElementById("btnAdd+".concat(e)).disabled = true;
+        //document.getElementById("btnDel+".concat(e)).disabled = false;
+    }
+
+    function SaveFunc(e) {
+        $.ajax({
+            url: '@Url.Action("SubmitTest", "Teacher")',
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(new SingleQuestionAddViewModel(e, 0, true, document.getElementById("txtTestname").value, 0,
+                document.getElementById("tType").value, document.getElementById("txtImage").value,
+                document.getElementById("txtTags").value)),
+            success: function () {
+                console.log("Submit successful");
+            }
+        })
+        window.location.href = "@Url.Action("Index", "Teacher")";
+    }
+
+    function TypeTest() {
+        //console.log(typeof (document.getElementById("tType").value));
+
+        switch (parseInt(document.getElementById("tType").value)) {
+            case 1: {
+                document.getElementById("divMultQuest").hidden = true;
+                document.getElementById("divPuzzQuest").hidden = false;
+                break;
+            }
+            case 2: {
+                document.getElementById("divMultQuest").hidden = false;
+                document.getElementById("divPuzzQuest").hidden = true;
+                break;
+            }
+            default: {
+                document.getElementById("divMultQuest").hidden = true;
+                document.getElementById("divPuzzQuest").hidden = true;
+                break;
+            }
+        }
+    }
+
+    $( ".button_su_inner" ).mouseenter(function(e) {
+   var parentOffset = $(this).offset();
+
+   var relX = e.pageX - parentOffset.left;
+   var relY = e.pageY - parentOffset.top;
+   $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+   $(this).prev(".su_button_circle").removeClass("desplode-circle");
+   $(this).prev(".su_button_circle").addClass("explode-circle");
+
+});
+
+$( ".button_su_inner" ).mouseleave(function(e) {
+
+     var parentOffset = $(this).offset();
+
+     var relX = e.pageX - parentOffset.left;
+     var relY = e.pageY - parentOffset.top;
+     $(this).prev(".su_button_circle").css({"left": relX, "top": relY });
+     $(this).prev(".su_button_circle").removeClass("explode-circle");
+     $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+});
+</script>
+
+

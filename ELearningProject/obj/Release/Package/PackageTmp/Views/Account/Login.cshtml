@@ -1,0 +1,71 @@
+﻿@using ELearningProject.Models
+@using Microsoft.Owin.Security
+@model LoginViewModel
+@{
+    Layout = null;
+}
+<style>
+    .btnfb {
+        border:none;
+        background:none
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/Content/loginstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <img src="~/Content/Images/logo2.svg" alt="" class="login__logo mb-5">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "login__form", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+                @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "login__input", @placeholder = "Email" } })
+                @Html.ValidationMessageFor(m => m.Email)
+                @Html.PasswordFor(m => m.Password, new { @class = "login__input", @placeholder = "Password" })
+                @Html.ValidationMessageFor(m => m.Password)
+                <button type="submit" formmethod="post" class="login__submit" value="Sign in">Sign in</button>
+            }
+                <div class="login__options">
+                    <p>Or sign in with</p>
+                    @{
+                        var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+                        if (loginProviders.Count() != 0)
+                        {
+                            using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div id="socialLoginList">
+                                    <p>
+                                        @foreach (AuthenticationDescription p in loginProviders)
+                                        {
+                                            <button type="submit" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType"
+                                                    title="Log in using your @p.Caption account" class="btnfb">
+                                                <svg class="login__icon login__icon--1">
+                                                    <use xlink:href="~/Content/Images/sprite.svg#icon-facebook2">@p.AuthenticationType</use>
+                                                </svg>
+                                            </button>
+
+                                        }
+                                    </p>
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+            <div class="login__break">&nbsp;</div>
+            <p class="login__signup">Don't have an account - <a href="@Url.Action("Register", "Account" )" class="login__link">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

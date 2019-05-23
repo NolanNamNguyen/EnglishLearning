@@ -1,0 +1,109 @@
+﻿@using ELearningProject.Models
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    int WebUserID = int.Parse(Request.Cookies["WebUserID"].Value);
+    Web_user User = db.Web_Users.Find(WebUserID);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/Content/stylestudent.css">
+    <link rel="stylesheet" href="~/Content/AnswerPuzzelVideo.css">
+    <link href="~/Content/Teacher.css" rel="stylesheet" />
+    <link href="~/Content/MultiChoice.css" rel="stylesheet" />
+    <link href="~/Content/CreateTest.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/HomeRedirect.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="@Url.Action("Index")">
+            <div class="nav__left">
+                <img src="~/Content/Images/logo2.svg" alt="" class="nav__logo">
+                <div class="nav__details">
+                    <a href="@Url.Action("Index")" class="nav__name heading-1">ABC English</a>
+                    <div class="nav__text">The best way to improve your listening skills</div>
+                </div>
+            </div>
+        </a>
+        <div class="nav__right">
+            <div class="nav__search-box">
+                <input type="text" placeholder="Search" class="nav__search">
+                <a href="#">
+                    <img src="~/Content/Images/search.svg" alt="" class="nav__search-icon">
+                </a>
+            </div>
+            <div class="nav__group">
+                <img src="~/Content/Images/calendar.svg" alt="" class="nav__icon">
+                <a href="#" class="nav__subject">Personal Plan</a>
+            </div>
+            <div class="nav__group">
+                <img src="~/Content/Images/documents-button.svg" alt="" class="nav__icon">
+                <a href="#" class="nav__subject">5</a>
+            </div>
+            <div class="nav__profile">
+                <img src="@User.UserImage" alt="" class="nav__avatar">
+                <div class="nav__popup">
+                    <div class="nav__popup-box-1">
+                        <img src="@User.UserImage" alt="" class="nav__avatar-2">
+                        <div class="nav__popup-userinfo">
+                            <p class="nav__popup-username">@User.Name</p>
+                            <img src="~/Content/Images/creative.svg" alt="" class="nav__popup-puzzle">
+                            <p class="nav__popup-puzzle-text">x3</p>
+                        </div>
+                    </div>
+                    <div class="nav__popup-box-2">
+                        <div class="nav__popup-menu">
+                            <img src="~/Content/Images/settings.svg" alt="" class="nav__popup-menu-icon">
+                            <a href="@Url.Action("EditProfile","Account")" class="nav__popup-menu-title">Edit Profile</a>
+                        </div>
+                    </div>
+                    <div class="nav__popup-box-3">
+                        <div class="nav__popup-menu">
+                            <img src="~/Content/Images/list.svg" alt="" class="nav__popup-menu-icon">
+                            <a href="@Url.Action("RealCreateTest", "Teacher")" class="nav__popup-menu-title">add test</a>
+                        </div>
+                        <div class="nav__popup-menu">
+                            <img src="~/Content/Images/logout.png" alt="" class="nav__popup-menu-icon">
+                            <a href="@Url.Action("Index", "Home")" class="nav__popup-menu-title">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <footer class="footer" id="contact">
+        <a href="#" class="nav__name heading-1 footer__logo">ABC English</a>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#home" class="footer__link">home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#projects" class="footer__link">projects</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__details">
+            <p class="footer__text">Living, learning, & leveling up one day at a time.</p>
+        </div>
+    </footer>
+</body>
+</html>

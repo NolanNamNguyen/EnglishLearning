@@ -1,0 +1,93 @@
+﻿@using ELearningProject.Models
+@model ELearningProject.Models.MultipieChoiceViewModel
+
+<div class='data__Content__MultiChoice_creating'>
+    @using (Ajax.BeginForm("CreateQuizQues", "Teacher", "", new AjaxOptions { HttpMethod = "POST",UpdateTargetId= "myresponse", OnSuccess = "AddToTest" }, new { @class = "Answer__form__MultiChoice_create" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        @*<div class='Answer__form__MultiChoice_create'>*@
+        <div class='Question__content__MultiChoice__Create'>
+            @Html.EditorFor(m => m.Content, new { htmlAttributes = new { @class = "effect-2", @placeholder = "Enter Your Question with the blank to fill answer" } })
+            @*<input class="effect-2" type="text" placeholder="Enter Your Question with the blank to fill answer">*@
+            <span class="focus-border"></span>
+        </div>
+        <ul class='Potential__Answer__MultiChoice'>
+            <li class='MultiChoice__Answer__cover multianswer1'>
+                <div class='Answerbox__MultipleChoice__Create'>
+                    <div class='Answerindex__MultipleChoice'>A.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <label class='Option__MultipleChoice__create'>
+                            @Html.EditorFor(m => m.Quiz.Quiz1, new { htmlAttributes = new { @class = "effect-2", @placeholder = "Answer Option here" } })
+                            @Html.ValidationMessageFor(m=>m.Quiz.Quiz1)
+                            @*<input class="effect-2" type="text" placeholder="Answer Option here">*@
+                            <span class="focus-border"></span>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class='MultiChoice__Answer__cover multianswer2'>
+                <div class='Answerbox__MultipleChoice__Create'>
+                    <div class='Answerindex__MultipleChoice'>B.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <label class='Option__MultipleChoice__create'>
+                            @Html.EditorFor(m => m.Quiz.Quiz2, new { htmlAttributes = new { @class = "effect-2", @placeholder = "Answer Option here" } })
+                            @Html.ValidationMessageFor(m => m.Quiz.Quiz2)
+
+                            @*<input class="effect-2" type="text" placeholder="Answer Option here">*@
+                            <span class="focus-border"></span>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class='MultiChoice__Answer__cover multianswer3'>
+                <div class='Answerbox__MultipleChoice__Create'>
+                    <div class='Answerindex__MultipleChoice'>C.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <label class='Option__MultipleChoice__create'>
+                            @Html.EditorFor(m => m.Quiz.Quiz3, new { htmlAttributes = new { @class = "effect-2", @placeholder = "Answer Option here" } })
+                            @Html.ValidationMessageFor(m => m.Quiz.Quiz3)
+
+                            @*<input class="effect-2" type="text" placeholder="Answer Option here">*@
+                            <span class="focus-border"></span>
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <li class='MultiChoice__Answer__cover multianswer4'>
+                <div class='Answerbox__MultipleChoice__Create'>
+                    <div class='Answerindex__MultipleChoice'>D.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <label class='Option__MultipleChoice__create'>
+                            @Html.EditorFor(m => m.Quiz.Quiz4, new { htmlAttributes = new { @class = "effect-2", @placeholder = "Answer Option here" } })
+                            @Html.ValidationMessageFor(m => m.Quiz.Quiz4)
+
+                            @*<input class="effect-2" type="text" placeholder="Answer Option here">*@
+                            <span class="focus-border"></span>
+                        </label>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="Quiz__Answer__confirm_create">
+            <h3>
+                Insert the Answer :
+            </h3>
+            <div class="Quiz__Answer__input">
+                @*@Html.EditorFor(m => m.Answer_input, new { htmlAttributes = new { @class = "effect-2", @placeholder = "Answer" } })*@
+                @Html.DropDownListFor(m => m.EAnswer,
+                    new SelectList(Enum.GetValues(typeof(Answer_input))), new {@class="mycombobox"})
+                @*<input class="effect-2" type="text" placeholder="Answer">*@
+            </div>
+           
+        </div>
+        <div class="Quiz__create__submitSection">
+            <button type="submit" formmethod="post" class="test__button__create btnPush edit__test">Create</button>
+        </div>
+        <div id="myresponse">
+
+        </div>
+        @*</div>*@
+    }
+
+</div>

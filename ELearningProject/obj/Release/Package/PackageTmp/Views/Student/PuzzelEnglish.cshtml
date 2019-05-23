@@ -1,0 +1,35 @@
+﻿@using ELearningProject.Models
+@model ELearningProject.Models.TestTagViewModel
+@{
+    ViewBag.Title = "Student";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<section class="videos">
+    @foreach (var tag in Model.Tags)
+    {
+        <h2 class="heading-2 videos__heading">#@tag</h2>
+        foreach (var id in Model.TestIds[Model.Tags.IndexOf(tag)])
+        {
+            TestViewModel t = Model.Tests.Where(tst => tst.id == id).FirstOrDefault();
+            var url = "/Tests/test" + "-" + t.id;
+            <div class="video__puzzleindex">
+                <h4 class="heading-4 heading-4--yellow">videopuzzle</h4>
+                <div class="video__img-box">
+                    <img src="@t.Image" alt="" class="video__img">
+                    <div class="video__layer"></div>
+                    <a href="~/Student/PuzzelEnglish?TestId=@t.id" class="btn video__btn">play</a>
+                </div>
+                <div class="video__title">@t.Desc</div>
+                <div class="video__info">
+                    <div class="video__difficulty video__difficulty--1">
+                        <span class="video__difficutly-point"></span>
+                        <span class="video__difficutly-point"></span>
+                        <span class="video__difficutly-point"></span>
+                    </div>
+                    <img src="~/Content/Images/unitedkingdom.png" alt="" class="video__accent">
+                    <p class="video__phrases">25 phrase</p>
+                </div>
+            </div>
+        }
+    }
+</section>

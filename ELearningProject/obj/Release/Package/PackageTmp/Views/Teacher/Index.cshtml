@@ -1,0 +1,131 @@
+﻿@using ELearningProject.Models
+@model ELearningProject.Models.TeacherIndexViewModel
+@{
+    ViewBag.Title = "Teacher";
+    Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+}
+<style>
+    table {
+        text-align: center;
+        font-family: Arial;
+        font-size: 20px;
+        border-collapse: collapse;
+        width: 100%;
+        border: groove;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+<header class="header">
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Tests Done!</h2>
+            <a class="close" href="#">&times;</a>
+            <br />
+            <div class="content">
+                <div id="ScoreBoard">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__details mb-5">
+        <h2 class="heading-2">
+            Your Tests
+        </h2>
+        <br />
+    </div>
+    <div>
+        <section class="videos">
+            @foreach (var tt in Model.stvm.Tests)
+            {
+                foreach (var test in tt)
+                {
+                    if (Model.OwnTests.Contains(test.id))
+                    {
+                        <div class="video__puzzleindex">
+                            <h4 class="heading-4 heading-4--yellow">videopuzzle</h4>
+                            <div class="video__img-box">
+                                <img src="@test.Image" alt="" class="video__img">
+                                <div class="video__layer"></div>
+                                <a href="#popup1" class="btn video__btn buttonpopup" 
+                                   onclick="GetMarks(@test.id)">Results</a>
+                            </div>
+                            <div class="video__title">@test.Desc</div>
+                            <div class="video__info">
+                                <div class="video__difficulty video__difficulty--1">
+                                    <span class="video__difficutly-point"></span>
+                                    <span class="video__difficutly-point"></span>
+                                    <span class="video__difficutly-point"></span>
+                                </div>
+                                <img src="~/Content/Images/unitedkingdom.png" alt="" class="video__accent">
+                                <p class="video__phrases">25 phrase</p>
+                            </div>
+                        </div>
+                    }
+                }
+            }
+        </section>
+    </div>
+
+    <script>
+        function GetMarks(id) {
+            //console.log("Requesting test results at id: " + id);
+            $.ajax({
+                url: '@Url.Action("GetTestResult", "Teacher")',
+                dataType: "json",
+                type: "POST",
+                cache: false,
+                data: { testid: id },
+                success: function (data) {
+                    var str = "<table border = \"2\"><tr><th>" + "Student Name" + "</th><th>" + "Score" + "</th></tr>";
+                    data.forEach((item) => {
+                        console.log(item.Score);
+                        str += "<tr><td>" + item.Student.Name + "</td><td>" + item.Score + " / 100" + "</td></tr>";
+                    })
+                    str += "</table>";
+                    document.getElementById("ScoreBoard").innerHTML = str;
+                    console.log(str);
+                },
+                error: function () {
+                    alert("Cant find data");
+                }
+            })
+        }
+    </script>
+
+    <section class="videos">
+        @foreach (var type in Model.stvm.TestTypes)
+        {
+            <h2 class="heading-2 videos__heading">@type</h2>
+            foreach (var t in Model.stvm.Tests[Model.stvm.TestTypes.IndexOf(type)])
+            {
+                <div class="video__puzzleindex">
+                    <h4 class="heading-4 heading-4--yellow">videopuzzle</h4>
+                    <div class="video__img-box">
+                        <img src="@t.Image" alt="" class="video__img">
+                        <div class="video__layer"></div>
+                        <a href="#popup1" class="btn video__btn buttonpopup">edit</a>
+                    </div>
+                    <div class="video__title">@t.Desc</div>
+                    <div class="video__info">
+                        <div class="video__difficulty video__difficulty--1">
+                            <span class="video__difficutly-point"></span>
+                            <span class="video__difficutly-point"></span>
+                            <span class="video__difficutly-point"></span>
+                        </div>
+                        <img src="~/Content/Images/unitedkingdom.png" alt="" class="video__accent">
+                        <p class="video__phrases">25 phrase</p>
+                    </div>
+                </div>
+            }
+        }
+    </section> 
+</header>

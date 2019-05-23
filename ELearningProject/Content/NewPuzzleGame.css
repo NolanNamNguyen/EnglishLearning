@@ -1,0 +1,273 @@
+﻿.progress__outer {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.progress__inner {
+    position: absolute;
+    border-radius: 999px;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 400;
+}
+.PuzzleTest__Big__Container {
+    grid-column: full-start/end-full;
+    min-height: 800px;
+    background-color: #ffd761;
+    background-image: url(Images/puzzle-yellow-light.png);
+    display:flex;
+    flex-flow:column;
+    position:relative;
+}
+.PuzzleTest__Big__Container:after {
+    content: '';
+    height: 6px;
+    background-image: url(Images/yellow-after-real.png);
+    width: 100%;
+    position: absolute;
+    top: auto;
+    bottom: -6px;
+}
+.PuzzleTest_Header_Contain {
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/puzzle-yellow-light.png');
+    display: flex;
+    flex-flow: column;
+    margin-bottom:45px;
+}
+.Back_contain {
+    display: flex;
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+}
+.Back_contain a{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 12px;
+}
+.Back_contain a:hover{
+    cursor:pointer;
+}
+.PuzzleTest_HDetail_Contain {
+    display: flex;
+    flex-flow: column;
+    padding-top: 26px;
+    width: 73%;
+    align-self: center;
+}
+.back_icon{
+    padding-top:2px;
+}
+.Under_back_contain {
+    display: flex;
+    justify-content: space-between;
+}
+.Game_title_contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 500;
+}
+.Phrase_count_contain {
+    display: flex;
+    align-items: center;
+    font-size: 39px;
+    font-weight: 500;
+    color: white;
+    position:relative;
+}
+.digit {
+    background-color: rgba(253, 60, 60, 0.8509803921568627);
+    width: 33px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    margin-right:3px;
+}
+.video_section_Bigcontain {
+    align-self: center;
+    width: 60%;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 16px;
+}
+.Quesvideo {
+    width: 100%;
+    height: 423px;
+    align-self: center;
+}
+.QuesVideo_contain {
+    display: flex;
+    flex-flow: column;
+    position:relative;
+}
+.Answer_contain {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 59px;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.word_contain {
+    display: flex;
+    background: white;
+    font-size: 25px;
+    padding: 6px 11px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-right: 13px;
+    margin-bottom: 8px;
+    position:relative;
+    top:0;
+    opacity:1;
+    transition: all 0.3s;
+}
+.invi_word{
+    opacity:0;
+    top:-17px;
+}
+.word_contain:hover{
+    color: #22b1ea;
+    cursor: pointer;
+}
+.Quesitem_contain {
+    display: flex;
+    width: 67%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+}
+.Result_big_contain {
+    grid-column: full-start/end-full;
+    min-height: 500px;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 25px;
+}
+.playpause {
+    background-color: #404040;
+    width: 22%;
+    height: 50px;
+    align-self: center;
+    border-radius: 17px;
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-around;
+    padding: 11px;
+    padding-top: 19px;
+}
+
+.Button_contain {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+}
+.Button_contain img{
+    width:50px;
+    height:50px;
+}
+.Button_contain span{
+    padding-left: 10px;
+}
+.Button_contain:hover{
+    cursor:pointer;
+}
+.inviitem{
+    display:none;
+}
+.rightP_answer {
+    background-color: #7ac70c;
+    color: white;
+}
+.wrongP_answer {
+    background-color: #e53838;
+    color: white;
+}
+.right_word_result {
+    background: none !important;
+    color: #7ac70c;
+}
+.wrong_word_result {
+    background: none !important;
+    color: #e53838;
+}
+
+.result_row_input {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-self: center;
+    height: 169px;
+    padding-top:30px;
+}
+.result_video_contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37%;
+    background-color: black;
+    border-radius: 8px;
+}
+.result_video_contain:hover{
+    cursor:pointer;
+}
+.result_answer_contain {
+    display: flex;
+    width: 58%;
+}
+.result_input {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+}
+.your_answer{
+    display:flex;
+}
+.your_answer span{
+    font-size:21px;
+    padding: 5px 5px;
+    margin: 0;
+    padding-right:0;
+}
+.result_video{
+    width:93%;
+    height: 136px;
+}
+.right_answer_input {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 6px;
+}
+.NofPhrase {
+    position: absolute;
+    font-size: 21px;
+    width: 170px;
+    bottom: -9px;
+    left: -120px;
+    color: black;
+}

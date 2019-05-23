@@ -1,0 +1,21 @@
+<svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+  <title>Grammar train</title>
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="Иконки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-799.000000, -1005.000000)">
+    <g id="Grammar-train" transform="translate(799.000000, 1005.000000)" fill="#333333">
+      <g id="shapka_examen-copy">
+        <g id="Group-23" transform="translate(11.000000, 6.000000)">
+          <rect id="Rectangle-34" x="0" y="0" width="7" height="2"></rect>
+          <rect id="Rectangle-34-Copy-2" x="0" y="5" width="7" height="2"></rect>
+          <rect id="Rectangle-34-Copy-3" x="0" y="10" width="7" height="2"></rect>
+        </g>
+        <path d="M2,24 L0,24 L0,0 L2,0 L20,0 L22,0 L22,24 L20,24 L2,24 Z M2,22 L20,22 L20,2 L2,2 L2,22 Z" id="Combined-Shape"></path>
+      </g>
+      <polygon id="Path-35" fill-rule="nonzero" points="7.94766983 4.23784267 9.36188339 5.65205623 6.01052662 9.00341301 3.60526328 6.82956983 4.94629344 5.34577803 5.94085958 6.24465292"></polygon>
+      <polygon id="Path-35-Copy" fill-rule="nonzero" points="7.67189147 9.29289322 9.08610503 10.7071068 5.73474825 14.0584636 3.32948492 11.8846204 4.67051508 10.4008286 5.66508122 11.2997035"></polygon>
+      <path d="M6.37042982,16.9371876 L4.99280796,16.9719767 L5.66508122,16.2997035 L6.37042982,16.9371876 Z M7.67189147,14.2928932 L9.08610503,15.7071068 L5.73474825,19.0584636 L3.32948492,16.8846204 L4.67051508,15.4008286 L5.66508122,16.2997035 L7.67189147,14.2928932 Z" id="Path-35-Copy-2" fill-rule="nonzero"></path>
+    </g>
+  </g>
+</svg>

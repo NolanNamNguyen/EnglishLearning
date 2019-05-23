@@ -1,0 +1,242 @@
+﻿.small__banner {
+    width: 1536px;
+    height: 171px;
+    background: url(Images/puzzle-yellow-light.png);
+    display: block;
+    background-color: #ffd761;
+    padding: 14px 25px;
+    text-align: center;
+    margin:0 auto;
+  
+}
+.answerpage__body{
+    width: 1536px;
+}
+.linkback {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 11px 1px;
+    height: 35px;
+    margin-bottom: 19px;
+    margin-top: 10px;
+}
+.linkback a{
+    text-decoration: none !important;
+    color: black;
+    font-weight:500;
+}
+.header__containeritem{
+    display: block;
+    width: 100%;
+    padding: 5px 5px;
+    margin: auto;
+}
+.stucontent__wrapper{
+    line-height: 7px;
+    margin: auto;
+    
+}
+
+.progress__container{
+    float:left;
+    width:20%;
+}
+.answer__videoname {
+    display: block;
+    width:80%;
+    font-size: 30px;
+}
+.complete__percent{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.answer__sectionwrapper {
+    width: 100%;
+    display: block;
+    height:auto;
+}
+.video_and_answer__section {
+    display: block;
+    width: 100%;
+    padding: 44px 75px;
+    height: 400px;
+}
+.video_wrapper video{
+    width: 100%;
+    height: 100%;
+}
+.video_wrapper{
+    float:left;
+    width: 40%;
+    height: 327px;
+}
+.answer_area {
+    float: left;
+    width: 55%;
+    padding: 10px 28px;
+    height: 100%;
+}
+.word__block {
+    background: url(Images/bg-puzzle.png) #f8f8f8 no-repeat 0 50%;
+    position: relative;
+    display: inline-block;
+    margin: 0 16px 10px 0;
+    color: #333;
+    font-size: 0;
+    padding: 10px 20px 10px 20px;
+    white-space: nowrap;
+    cursor: default;
+    min-width: 28px;
+}
+.word__block:after {
+    content: '';
+    background: url(Images/bg-puzzle-sprite.png) no-repeat 0 0;
+    display: block;
+    position: absolute;
+    right: -11px;
+    color:rebeccapurple;
+    top: 50%;
+    margin-top: -7px;
+    width: 11px;
+    height: 14px;
+    z-index: 10;
+}
+.word__puzzle {
+    font-size: 16px !important;
+    line-height:29px;
+}
+.puzzles{
+    display:block;
+    padding: 10px 0 10px 74px;
+    float:left;
+    width:60%;
+}
+
+.infor {
+    display: flex;
+}
+
+.video {
+    width: 350px;
+    position: relative;
+}
+
+    .video video {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+.control {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+#play {
+    padding: 11px 27px;
+    background: no-repeat;
+    border: 2px solid #005fa3;
+    background: #005fa3;
+    color: #fff;
+    box-shadow: 0px 5px 0px 1px #0b395a;
+    cursor: pointer;
+}
+
+#speed {
+    padding: 11px 27px;
+    background: no-repeat;
+    border: 2px solid #cf7504;
+    background: #cf7504;
+    color: #fff;
+    box-shadow: 0px 5px 0px 1px #9e5903;
+    cursor: pointer;
+    position: relative;
+}
+
+.boxB {
+    width: 500px;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+    position: relative;
+}
+
+.answer {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question {
+    display: flex;
+    margin-top: 15px;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .bar .tr {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+        .bar .tr.active {
+            background: #70abd6;
+        }
+
+.item, .word {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #333;
+    margin-bottom: 3px;
+}
+
+    .item.rm {
+        visibility: hidden;
+    }
+
+
+.bar .tr:first-child:before {
+    content: 'chậm';
+    font-size: 13px;
+    display: block;
+    margin-top: 12px;
+}
+
+.bar .tr:nth-child(2):before {
+    content: 'bình thường';
+    font-size: 13px;
+    display: block;
+    margin-top: 12px;
+    /* text-align: center; */
+}
+
+.bar .tr:last-child:before {
+    content: 'nhanh';
+    font-size: 13px;
+    display: block;
+    margin-top: 12px;
+}

@@ -1,0 +1,35 @@
+﻿@using ELearningProject.Models
+@model ELearningProject.Models.TestTagViewModel
+@{
+    ViewBag.Title = "MultipieChoice";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<div class="header">
+    <div class="header__products">
+        @foreach (var tag in Model.Tags)
+        {
+            <h2 class="heading-2 videos__heading">#@tag</h2>
+            foreach (var id in Model.TestIds[Model.Tags.IndexOf(tag)])
+            {
+                TestViewModel t = Model.Tests.Where(tst => tst.id == id).FirstOrDefault();
+                var url = "/Tests/test" + "-" + t.id;
+                <div class="teacher_product">
+                    <div class="img__testbox">
+                        @*image here*@
+                        <img src="~/Content/Images/tasks.png" alt="" class="img__test">
+                    </div>
+                    <div class="test__description">
+                        <h3 class="test__title">Test title here</h3>
+                        <p class="description__text">
+                            @t.Desc
+                        </p>
+                        <div class="test__edit__section">
+                            <a href="~/Student/MultipieChoice?TestId=@t.id" class="test__button btnPush edit__test">Take Test</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
+</div>

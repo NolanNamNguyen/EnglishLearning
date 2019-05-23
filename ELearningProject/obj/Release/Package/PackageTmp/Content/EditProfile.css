@@ -1,0 +1,217 @@
+﻿.EP__Bigcontain {
+    display: flex;
+    grid-column: full-start/end-full;
+    justify-content: center;
+    background-color: #f4f7fb;
+    padding-top:40px;
+    padding-bottom:70px;
+}
+.User__setting__EP {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    width: 22%;
+    border-radius: 11px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 6px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-right: 40px;
+    height: fit-content;
+}
+.User__form__changeEP a{
+    font-size:15px;
+    font-weight:500;
+}
+
+.User__form__changeEP a:hover, button:hover {
+    cursor: pointer;
+}
+.User__form__changeEP {
+    padding: 25px 25px;
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 6px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 11px;
+    background-color: white;
+    height: fit-content;
+    overflow:hidden;
+    transition: all 0.3s;
+}
+
+.EP__directionContain {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+.EP__form__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 61px;
+    position:relative;
+}
+
+.EP__form__input {
+    height: 36px;
+    width: 35%;
+}
+
+.EP__form__input input {
+    font-weight: 500;
+    padding: 5px 5px;
+    font-size: 16px;
+    color: #2f4051;
+    height: inherit;
+    width: 100%;
+    border: 1px solid #95a5b2;
+    border-radius: 2px;
+    background: 0 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.EP__title {
+    color: #3c4f5f;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 9px;
+}
+.EP__title:hover{
+    cursor:pointer;
+}
+.EP__submit {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px 24px 8px;
+    height: 40px;
+    color: #fff !important;
+    background-color: #79c257;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+.EP__form__label {
+    color: #2f4051;
+    font-size: 16px;
+    width: 23%;
+    font-weight: 600;
+}
+.User__level__EP {
+    font-weight: 300;
+    display: block;
+    font-size: 16px;
+    color: #1cb9fa;
+}
+.EP__direction__ItemIcon {
+    width: 20px;
+    height: 20px;
+}
+.EP__direction__ItemIcon svg{
+    width:20px;
+    height:20px;
+}
+.EP__form__title {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+.myhr {
+    border: 1px solid #e0e7ee;
+    height: 2px;
+    margin-bottom: 16px;
+}
+.EP__UserForm__img {
+    width: 5%;
+    margin-right: 21px;
+}
+.EP__UserForm__img img{
+    width:100%
+}
+.UserName__level__contain{
+    padding-left:22px;
+}
+.UserImage__EP__setting {
+    display: flex;
+    width: 80%;
+    align-self: center;
+    padding-bottom:20px;
+    height:250px;
+}
+.UserImage__EP__setting img{
+    width: 100%;
+    height:100%;
+}
+.EP__direction__Item {
+    padding-left: 19px;
+    font-size: 19px;
+    color: #313030;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.EP__direction__Item:hover{
+    cursor:pointer;
+    background-color:#edf4fa;
+}
+.EP__direction__Item:focus{
+    background-color:#edf4fa;
+}
+.checkPass__EP__right, .checkPass__EP__wrong {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    padding-left: 13px;
+    position: absolute;
+    left: 58%;
+    opacity :1;
+    transition:all 0.3s;
+}
+.checkPass__EP__right p{
+    color:green;
+    font-size:15px;
+    font-weight:500;
+}
+.checkPass__EP__wrong {
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+}
+.EP__successCheck {
+    background-image: url(Images/SuccessIcon.svg);
+    content: "";
+    width: 11%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.EP__failCheck {
+    background-image: url('Images/FaillureIcon.svg');
+    content: "";
+    width: 9%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inviCheckPass_inform{
+    left:65%;
+    opacity:0;
+}
+.ChangePass__inform {
+    border: 1px solid green;
+    font-size: 15px;
+    font-weight: 500;
+    color: green;
+    padding-left: 21px;
+}
+.WrongType {
+    border: 1px solid red;
+    font-size: 15px;
+    font-weight: 500;
+    color: red;
+    padding-left: 21px;
+}
+.EP__changePassForm{
+    transition: all 0.2s;
+}
+.EP__ChangePassFormtoggle{
+    display: none;
+}
+

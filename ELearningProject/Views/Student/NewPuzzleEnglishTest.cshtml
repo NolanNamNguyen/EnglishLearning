@@ -1,0 +1,319 @@
+﻿@using ELearningProject.Models
+@model ELearningProject.Models.PuzzelTestViewModel
+@{
+    var count = Model.Questions.Count();
+    string phrase = count.ToString();
+    if (phrase.Length == 1)
+    {
+        phrase = "0" + phrase;
+    }
+    ViewBag.Title = "Puzzel English";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+
+<div class="PuzzleTest__Big__Container">
+    <div class="PuzzleTest_Header_Contain">
+        <div class="PuzzleTest_HDetail_Contain">
+            <div class="Back_contain">
+                <div class="back_icon">
+                    <img src="~/Content/Images/icon_back_dark.png" />
+                </div>
+                <a id="Back_to_page">Back to your page</a>
+            </div>
+            <div class="Under_back_contain">
+                <div class="Circle_progress_contain">
+                    <div id="progressCircle" data-progress="tip" class="progress__outer" data-value="">
+                        <div class="progress__inner">0%</div>
+                    </div>
+                </div>
+                <div class="Game_title_contain">
+                    Give me a Title here
+                </div>
+                <div class="Phrase_count_contain">
+                    <div class="1stdigit digit">
+                        @phrase[0]
+                    </div>
+                    <div class="2nddigit digit">
+                        @phrase[phrase.Length -1]
+                    </div>
+                    <p class="NofPhrase">Number of Puzzle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video_section_Bigcontain">
+        <div class="QuesVideo_contain">
+            <video id="myvideo" class="Quesvideo" autoplay>
+                <source src="" />
+            </video>
+            <div id="append_Answer_item_div" class="Answer_contain">
+
+            </div>
+        </div>
+    </div>
+    <div class="playpause">
+        <div id="slowButton" class="Button_contain">
+            <div class="slow_iconContain">
+                <img src="~/Content/Images/slow_icon.svg" />
+            </div>
+            <span>
+                Slow
+            </span>
+        </div>
+        <div id="Repeat_button" class="Button_contain">
+            <div class="repeat_iconContain">
+                <img src="~/Content/Images/loopicon.svg" />
+            </div>
+            <span>
+                Repeat
+            </span>
+        </div>
+    </div>
+    <div id="Quesitem_append" class="Quesitem_contain">
+
+    </div>
+</div>
+<div id="resultP_append" class="Result_big_contain">
+    
+</div>
+@*Video control*@
+<script>
+    $(function () {
+        $("#Repeat_button").click(function () {
+            $("#myvideo").get(0).playbackRate = 1;
+            $("#myvideo").get(0).play();
+        })
+        $("#slowButton").click(function () {
+            $("#myvideo").get(0).playbackRate = 0.7;
+            $("#myvideo").get(0).play();
+        })
+    })
+</script>
+@*Video control*@
+
+<script>
+    var QuesListShuff;
+    var myi = 0;
+
+    var score = 0;
+    var qcount = 0;
+
+    function StudentScore(testId, studentId, score) {
+        this.testId = testId;
+        this.studentId = studentId;
+        this.score = score;
+        this.score /= QuesListShuff.length;
+        this.score *= 100;
+    }
+
+    //call ajax and load 1st Question
+    $(function () {
+        $.ajax({
+            url: "@Url.Action("SendObjectPuzzleTest","Student")",
+            data: { TestId: '@Model.TestId'},
+            cache: false,
+            type: "GET",
+            success: function (res) {
+                QuesListShuff = res;
+                AddnewPuzzle(QuesListShuff, myi);
+                $("#progressCircle").circleProgress({
+                    startAngle: 4.7,
+                    fill: {
+                        color: "#7ac70c"
+                    },
+                    emptyFill: "white"
+                });
+                $("canvas").css({
+                    "width": "100%",
+                    "height": "100%",
+                });
+            },
+            error: function () {
+                alert("ajax fucking failed")
+            }
+        })
+        
+    })
+    //call ajax and load 1st Question
+
+    //when click on answer item
+    $("#append_Answer_item_div").on("click", function () {
+        let myQuesitem = event.target.closest(".word_contain");
+        $(myQuesitem).addClass("invi_word");
+        setTimeout(function () {
+            $("#Quesitem_append").append(myQuesitem);
+            setTimeout(function () {
+                $(myQuesitem).removeClass("invi_word");
+            }, 300);
+        }, 300);
+    })
+    //when click on answer item
+
+    //check Answer here
+    $('#append_Answer_item_div').bind('contentchanged', function () {
+        
+        setTimeout(function () {
+            var count = $("#append_Answer_item_div .word_contain").length;
+            var ResultList = QuesListShuff[myi].Answer.split(' ');
+            if (count == ResultList.length) {
+                var counttotrue = 0;
+                var AnswerList = new Array();
+                var myresultP = `
+    <div class="result_row_input">
+        <div class="result_video_contain">
+            <video class="result_video">
+                <source src="${QuesListShuff[myi].Content}" />
+            </video>
+        </div>
+        <div class="result_answer_contain">
+            <div class="result_input">
+                <div id="${myi}" class="your_answer">
+
+                </div>
+                <div class="right_answer_input">
+                    ${QuesListShuff[myi].Answer}
+                </div>
+            </div>
+        </div>
+    </div>`;
+                $("#resultP_append").append(myresultP);
+                $("#append_Answer_item_div .word_contain").each(function (i, value) {
+                    AnswerList.push($(this).attr("title"));
+                    if ($(this).attr("title") == ResultList[i]) {
+                        $(this).addClass("rightP_answer");
+                        $(`#${myi}`).append(`
+                <span class="word_contain right_word_result">
+                    ${$(this).attr("title")}
+                </span>`);
+                        counttotrue = counttotrue + 1;
+                    }
+                    else {
+                        $(this).addClass("wrongP_answer");
+                        $(`#${myi}`).append(`
+                <span class="word_contain wrong_word_result">
+                    ${$(this).attr("title")}
+                </span>`);
+                    }
+                    if (counttotrue == ResultList.length) {
+                        console.log("1 correct");
+                        score += 1;
+                    }
+                    console.log(QuesListShuff.length)
+                    if (qcount == QuesListShuff.length) {
+                        console.log("Finished testing");
+                        $.ajax({
+                                url: '@Url.Action("SubmitScore", "Student")',
+                                dataType: "json",
+                                type: "POST",
+                            cache: false,
+                            data: { result: new StudentScore(@Model.TestId, @Model.StudentId, score) },
+                                success: function () {
+                                },
+                                error: function () {
+                                    alert("Cant find data");
+                                }
+                            })
+                        qcount = 0;
+                    }
+                })
+                myi = myi + 1;
+                var myPercent = (myi / QuesListShuff.length) * 100;
+                $("#progressCircle").attr("data-value",`${myPercent / 100}`)
+                $(".progress__inner").text(`${myPercent}%`)
+                $("#progressCircle").circleProgress({
+                    startAngle: 4.7,
+                    value: myPercent/100,
+                    fill: {
+                        color: "#7ac70c"
+                    },
+                    emptyFill: "white"
+                });
+                $("canvas").css({
+                    "width": "100%",
+                    "height": "100%",
+                });
+                setTimeout(function () {
+                    if (myi <= QuesListShuff.length) {
+                        try {
+                            AddnewPuzzle(QuesListShuff, myi);
+
+                        } catch  {
+                            alert("you're so awsome do you know that?")
+                        }
+                        $("#append_Answer_item_div").empty();
+                    }
+                    else {
+                        alert("you're so good do you know that?")
+                    }
+                },1000)
+                
+            }
+        }, 600);
+    });
+    //check Answer here
+
+    //when click on a ques item span
+    $("#Quesitem_append").on("click", function () {
+        let myAnswer = event.target.closest(".word_contain");
+        $(myAnswer).addClass("invi_word");
+        setTimeout(function () {
+            $("#append_Answer_item_div").append(myAnswer);
+            setTimeout(function () {
+                $(myAnswer).removeClass("invi_word");
+            }, 300);
+        }, 300);
+        $('#append_Answer_item_div').trigger('contentchanged');
+    })
+    //when click on a ques item span
+
+    $("#testingis").click(function () {
+        for (x = 0; x < QuesListShuff.length; x++) {
+            alert(QuesListShuff[x].Answer == QuesListOri[x].Answer);
+        };
+    })
+
+    // function add new Puzzle
+    function AddnewPuzzle(QuesList, index) {
+        qcount += 1;
+        $("#myvideo").children().attr("src", QuesList[index].Content);
+        $("#myvideo")[0].load();
+        var ListQuesItem = QuesList[index].Answer.split(' ');
+        shuffle(ListQuesItem);
+        $.each(ListQuesItem, function (i, value) {
+            $("#Quesitem_append").append(`
+                <span class="word_contain" title="${value}">
+                    ${value}
+                </span>`)
+        });
+    }
+    // function add new Puzzle
+
+    // funciton to shuffle the answer string
+    function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    }
+    // funciton to shuffle the answer string
+    $("#resultP_append").on("click", function () {
+        let MyResultVideo = event.target.closest(".result_video");
+        $(MyResultVideo).click(function () {
+            $(MyResultVideo).get(0).play();
+        })
+    })
+</script>
+
+

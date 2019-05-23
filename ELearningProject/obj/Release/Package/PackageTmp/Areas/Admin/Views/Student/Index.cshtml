@@ -1,0 +1,88 @@
+﻿@using ELearningProject.Models
+@model ELearningProject.Models.StudentUserViewModel
+@{
+    ViewBag.Title = "Student";
+    Layout = "~/Areas/Admin/Views/Shared/Layout_admin.cshtml";
+}
+
+
+@section header{
+    <h3>
+        Student Management
+    </h3>
+    <br />
+}
+<div class="col-md-12">
+    <!-- DATA TABLE -->
+    @*<div class="table-data__tool">
+        <div class="table-data__tool-right">
+            <a class="au-btn au-btn-icon au-btn--green au-btn--small" href="/Admin/User/Create">
+                <i classclass="zmdi zmdi-plus"> </i>Create
+            </a>
+        </div>
+    </div>*@
+    <div class="table-responsive table-responsive-data2">
+        <table class="table table-data2">
+            <thead>
+                <tr>
+
+                    <th>name</th>
+                    <th>Birthday</th>
+                  
+                    <th>Status</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.users)
+                {
+                    <tr class="tr-shadow">
+
+
+                        <td>
+                            @item.name
+                        </td>
+                        <td>@item.birthday</td>
+                    
+
+                        <td>
+
+                            @if (item.status == true)
+                            {
+                                <span class="label label-primary">UnLock</span>
+                            }
+                            else
+                            {
+                                <span class="label label-warning">Lock</span>
+                            }
+                        </td>
+                        @*<td>
+                                 @Ajax.ActionLink("Delete", "Delete", new { @id = item.id }, new AjaxOptions
+                            {
+                                Confirm = "Bạn có muốn xoá bản ghi này?",
+                                OnComplete = "$('#row_" + @item.id + "').remove()",
+                                HttpMethod = "Delete"
+                            })
+                             </td>
+                             <td>
+                                 @Ajax.ActionLink("Edit", "Edit", new { @id = item.id }, new AjaxOptions { })
+                             </td>*@
+                    </tr>
+                }
+
+
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+    <!-- END DATA TABLE -->
+
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+
+   

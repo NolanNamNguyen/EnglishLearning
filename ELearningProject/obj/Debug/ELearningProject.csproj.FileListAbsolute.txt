@@ -1,0 +1,378 @@
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\ELearningProject.dll.config
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\ELearningProject.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\ELearningProject.pdb
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\csc.exe
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\csc.exe.config
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\csc.rsp
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\csi.exe
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\csi.exe.config
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\csi.rsp
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.AppContext.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Console.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.IO.Compression.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.IO.Pipes.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.Claims.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.ValueTuple.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XPath.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\vbc.exe
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\vbc.exe.config
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\vbc.rsp
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Antlr3.Runtime.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\EntityFramework.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\EntityFramework.SqlServer.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Newtonsoft.Json.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Owin.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Helpers.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Mvc.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Optimization.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Razor.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.WebPages.Deployment.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.WebPages.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.WebPages.Razor.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\WebGrease.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Helpers.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Mvc.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Optimization.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.Razor.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.WebPages.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.WebPages.Deployment.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Web.WebPages.Razor.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Newtonsoft.Json.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Antlr3.Runtime.pdb
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\EntityFramework.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\EntityFramework.SqlServer.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csprojAssemblyReference.cache
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.identity.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_users.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.mod_users.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_student.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_student1.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Clean_DB.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Add_Q_Test_Teacher1.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Add_Test_Tag.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddTestImage.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddStudentTestResult.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.UpdateStudentResultDatabase.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddWebUserUserId.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddLocked.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddUserImage.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddNews.resources
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.GenerateResource.cache
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.CoreCompileInputs.cache
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.CopyComplete
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.dll
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.pdb
+C:\Users\khoib\source\repos\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddTestTitle.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\ELearningProject.dll.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\ELearningProject.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\ELearningProject.pdb
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\csc.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\csc.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\csc.rsp
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\csi.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\csi.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\csi.rsp
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.AppContext.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Collections.Immutable.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Console.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.IO.Compression.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.IO.FileSystem.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.IO.Pipes.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.AccessControl.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.Claims.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.ValueTuple.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XPath.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\vbc.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\vbc.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\vbc.rsp
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\VBCSCompiler.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\roslyn\VBCSCompiler.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Antlr3.Runtime.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\EntityFramework.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\EntityFramework.SqlServer.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Google.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Web.Infrastructure.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Newtonsoft.Json.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Owin.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Diagnostics.DiagnosticSource.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Helpers.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Mvc.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Optimization.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Razor.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.WebPages.Deployment.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.WebPages.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.WebPages.Razor.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\WebGrease.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Helpers.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Mvc.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Optimization.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.Razor.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.WebPages.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.WebPages.Deployment.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Web.WebPages.Razor.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Newtonsoft.Json.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Antlr3.Runtime.pdb
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\EntityFramework.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\EntityFramework.SqlServer.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Google.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\System.Diagnostics.DiagnosticSource.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csprojAssemblyReference.cache
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.identity.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_users.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.mod_users.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_student.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_student1.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Clean_DB.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Add_Q_Test_Teacher1.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Add_Test_Tag.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddTestImage.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddStudentTestResult.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.UpdateStudentResultDatabase.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddWebUserUserId.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddLocked.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddUserImage.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddNews.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddTestTitle.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.GenerateResource.cache
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.CoreCompileInputs.cache
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.CopyComplete
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\Khois Project\ELearningProject\ELearningProject\obj\Debug\ELearningProject.pdb
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\ELearningProject.dll.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\ELearningProject.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\ELearningProject.pdb
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\csc.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\csc.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\csc.rsp
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\csi.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\csi.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\csi.rsp
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.AppContext.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Collections.Immutable.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Console.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.IO.Compression.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.IO.FileSystem.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.IO.Pipes.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.AccessControl.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.Claims.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.ValueTuple.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XPath.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\vbc.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\vbc.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\vbc.rsp
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\VBCSCompiler.exe
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\roslyn\VBCSCompiler.exe.config
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Antlr3.Runtime.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\EntityFramework.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\EntityFramework.SqlServer.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Google.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Web.Infrastructure.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Newtonsoft.Json.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Owin.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Diagnostics.DiagnosticSource.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Helpers.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Mvc.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Optimization.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Razor.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.WebPages.Deployment.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.WebPages.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.WebPages.Razor.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\WebGrease.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Helpers.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Mvc.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Optimization.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.Razor.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.WebPages.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.WebPages.Deployment.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Web.WebPages.Razor.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Newtonsoft.Json.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Antlr3.Runtime.pdb
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\EntityFramework.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\EntityFramework.SqlServer.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Google.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\System.Diagnostics.DiagnosticSource.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csprojAssemblyReference.cache
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.identity.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_users.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.mod_users.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_student.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.add_student1.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Clean_DB.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Add_Q_Test_Teacher1.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.Add_Test_Tag.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddTestImage.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddStudentTestResult.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.UpdateStudentResultDatabase.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddWebUserUserId.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddLocked.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddUserImage.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddNews.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.Migrations.AddTestTitle.resources
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.GenerateResource.cache
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.CoreCompileInputs.cache
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.csproj.CopyComplete
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.dll
+D:\ITProject\3rdSemester\dotNET project sem 3\MainProject\ElearningProject-master\ELearningProject\ELearningProject\obj\Debug\ELearningProject.pdb

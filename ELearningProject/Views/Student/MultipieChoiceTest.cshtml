@@ -1,0 +1,163 @@
+﻿@using ELearningProject.Models
+@model IEnumerable<ELearningProject.Models.MultipieChoiceViewModel>
+@{
+    /**/
+
+    ViewBag.Title = "MultipieChoiceTest";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<div class="body__MultiChoice">
+    <div class="Content__MultiChoice__section">
+        <div id="beforeQuiz" class="goback__MultiChoic__section">
+        </div>
+
+        <div class='Post__Section'>
+            <div class='skip__button__div'>
+                <button id='skipMultiC' class='skip__button'>skip</button>
+                <button class="inform__icon"> </button>
+            </div>
+            <div class="inform__section">
+                <h2 class="right_wrong__inform"></h2>
+                <h3 class="right_answer__inform">asdfasdf</h3>
+                <audio id="rightAudio" preload="none">
+                    <source src="~/Content/Audio/SuccessAudioMulticheck.wav" />
+                </audio>
+                <audio id="wrongAudio" preload="none">
+                    <source src="~/Content/Audio/FailAudioMulticheck.wav" />
+                </audio>
+            </div>
+            <div class='checkAnswer__button__div'>
+                <button id='checkMultiC' class='checkAnswer__button avoid__event'>Check</button>
+                <button id='checkMultiC' class='next__question'>Next</button>
+            </div>
+            <
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var point = 0;
+        var i = 0;
+        var multiQuestionList = @Html.Raw(Json.Encode(Model));
+        AddQuestion(i);
+        $(".checkAnswer__button").click(function () {
+            var radioValue = $("input[name='MultiAnswer']:checked").val();
+            var myQuesId = $("input[name='MultiAnswer']:checked").attr("id").slice(0, -1); //slice method use to cut char from string
+            var myQues = multiQuestionList.find(x => x.QuestionId == myQuesId); // get 
+            var showAnswer;
+            var Answerindex = myQues.Quiz.Answer;
+            switch (Answerindex) {
+                case 1: showAnswer = myQues.Quiz.Quiz1
+                    break;
+                case 2: showAnswer = myQues.Quiz.Quiz2
+                    break;
+                case 3: showAnswer = myQues.Quiz.Quiz3
+                    break;
+                case 4: showAnswer = myQues.Quiz.Quiz4
+                    break;
+            }
+            if (radioValue == myQues.Quiz.Answer) {
+                $("#rightAudio").trigger('play');
+                $(".right_wrong__inform").text("You're Right!");
+                $(".right_wrong__inform").css("visibility", "visible");
+                $(".checkAnswer__button").css("visibility", "hidden");
+                $(".next__question").css("visibility","visible");
+                $(".next__question").css("background-color", "#53af35");
+                $(".skip__button").css("visibility", "hidden");
+                $(".inform__icon").css({
+                    'visibility': 'visible',
+                    'background-image': 'url(../../Content/Images/SuccessIcon.svg)'
+                })
+            }
+            else {
+                $("#wrongAudio").trigger('play');
+                $(".right_wrong__inform").text("You're wrong!");
+                $(".right_wrong__inform").css("visibility", "visible");
+                $(".right_answer__inform").css("visibility", "visible");
+                $(".right_answer__inform").text("Answer is: " + showAnswer);
+                $(".checkAnswer__button").css("visibility", "hidden");
+                $(".next__question").css("visibility", "visible");
+                $(".next__question").css("background-color", "#f14c4c");
+                $(".skip__button").css("visibility", "hidden");
+                $(".inform__icon").css({
+                    'visibility': 'visible',
+                    'background-image': 'url(../../Content/Images/FaillureIcon.svg)'
+                })
+            }
+        });
+
+        $(".next__question").click(function () {
+            $(".right_wrong__inform").css("visibility", "hidden");
+            $(".right_answer__inform").css("visibility", "hidden");
+            $(".inform__icon").css({
+                'visibility': 'hidden',
+            })
+            $(".skip__button").css("visibility", "visible");
+            RemoveQuestion();
+            AddQuestion(i);
+            $(".next__question").css("visibility", "hidden");
+            $(".checkAnswer__button").css("visibility", "visible");
+            $(".checkAnswer__button").addClass("avoid__event");
+        });
+
+        $(".skip__button").click(function () {
+            $("#wrongAudio").trigger('play');
+            var myQues = multiQuestionList[i];
+            var showAnswer;
+            var Answerindex = myQues.Quiz.Answer;
+            switch (Answerindex) {
+                case 1: showAnswer = myQues.Quiz.Quiz1
+                    break;
+                case 2: showAnswer = myQues.Quiz.Quiz2
+                    break;
+                case 3: showAnswer = myQues.Quiz.Quiz3
+                    break;
+                case 4: showAnswer = myQues.Quiz.Quiz4
+                    break;
+            }
+            $(".skip__button").css("visibility", "hidden");
+            $(".inform__icon").css({
+                'visibility': 'visible',
+                'background-image': 'url(../../Content/Images/FaillureIcon.svg)'
+            })
+
+            $(".right_wrong__inform").text("The Answer is: ");
+            $(".right_wrong__inform").css("visibility", "visible");
+            $(".right_answer__inform").css("visibility", "visible");
+            $(".right_answer__inform").text(showAnswer);
+            $(".checkAnswer__button").css("visibility", "hidden");
+            $(".next__question").css("visibility", "visible");
+            $(".next__question").css("background-color", "#f14c4c");
+
+        });
+
+        function AddQuestion(myi) {
+            $(".checkAnswer__button").addClass("avoid__event");
+            if (myi <= multiQuestionList.length) {
+                var ques = multiQuestionList[myi];
+                var quesSection = "<div class='data__Content__MultiChoice'><div class='Answer__form__MultiChoice'><h1 class='quest__title__MultiChoice'>Choose the right answer </h1><div class='Question__content__MultiChoice'>" + ques.Content + "</div><ul class='Potential__Answer__MultiChoice'><li class='MultiChoice__Answer__cover multianswer1'><div class='Answerbox__MultipleChoice'><div class='Answerindex__MultipleChoice'>A.</div><div class='radiodiv__MultipleChoice'><input id='" + ques.QuestionId + "1' class='QuestionQuiz1' type='radio' value='1' name='MultiAnswer' /><label for='" + ques.QuestionId + "1' class='Option__MultipleChoice labelforQ1'>" + ques.Quiz.Quiz1 + "</label></div></div></li> <li class='MultiChoice__Answer__cover multianswer2'><div class='Answerbox__MultipleChoice'><div class='Answerindex__MultipleChoice'>B.</div><div class='radiodiv__MultipleChoice'><input id='" + ques.QuestionId + "2' class='QuestionQuiz2' type='radio' value='2' name='MultiAnswer' /><label for='" + ques.QuestionId + "2' class='Option__MultipleChoice labelforQ2'>" + ques.Quiz.Quiz2 + "</label></div></div></li><li class='MultiChoice__Answer__cover multianswer3'><div class='Answerbox__MultipleChoice'><div class='Answerindex__MultipleChoice'>C.</div><div class='radiodiv__MultipleChoice'><input id='" + ques.QuestionId + "3' class='QuestionQuiz3' type='radio' value='3' name='MultiAnswer' /><label for='" + ques.QuestionId + "3' class='Option__MultipleChoice labelforQ3'>" + ques.Quiz.Quiz3 + "</label></div></div></li><li class='MultiChoice__Answer__cover multianswer4'><div class='Answerbox__MultipleChoice'><div class='Answerindex__MultipleChoice'>D.</div><div class='radiodiv__MultipleChoice'> <input id='" + ques.QuestionId + "4' class='QuestionQuiz4' type='radio' value='4' name='MultiAnswer' /><label for='" + ques.QuestionId + "4' class='Option__MultipleChoice labelforQ4'>" + ques.Quiz.Quiz4 + "</label></div></div></li></ul></div></div>";
+                $("#beforeQuiz").after(quesSection);
+                $(".data__Content__MultiChoice").css("transition", "cubic-bezier(0.73, 0.4, 0.41, 0.96)");
+                $(".data__Content__MultiChoice").animate({
+                    right: '0%',
+                    opacity: '1'
+                });
+                return myi;
+            }
+            else {
+                alert("out of question");
+            }
+        }
+
+        $(".Content__MultiChoice__section").on("click", ".Option__MultipleChoice", function () {
+           $(".checkAnswer__button").removeClass("avoid__event");
+        })
+
+        function RemoveQuestion() {
+
+            $(".data__Content__MultiChoice").remove();
+            i = i + 1;
+            return i;
+        }
+    });
+</script>

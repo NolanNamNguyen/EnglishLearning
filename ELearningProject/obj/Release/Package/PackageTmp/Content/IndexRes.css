@@ -1,0 +1,46 @@
+﻿@media only screen and (max-width: 767px) {
+    body.home {
+        min-width: 250px;
+    }
+
+    .teacher__statement {
+        width: 100% !important;
+        left: 0 !important;
+    }
+
+    .dogsvg{
+        display: none;
+    }
+
+    .teachersvg{
+        display: none;
+    }
+    .teacher__statement:after{
+        display: none;        
+    }
+
+    .PuzzleGameIconText{
+        display: none;
+    }
+
+    .wow{
+        width: 100% !important;
+        left: 0 !important;
+    }
+
+
+    .bounce {
+        display:none;
+    }
+
+    .rotateInDownRight{
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 698px) {
+    body {
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,45 @@
+﻿@model ELearningProject.Models.MultipieChoiceViewModel
+
+<div id="@Model.id" class='data__Content__MultiChoice_create invi__data__Content__MultiChoice_create'>
+    <div id="getAllQuesId" class='Answer__form__MultiChoice_return'>
+        <div class='Question__content__MultiChoice'>@Model.Content</div>
+        <ul class='Potential__Answer__MultiChoice'>
+            <li class='MultiChoice__Answer__cover multianswer1'>
+                <div class='Answerbox__MultipleChoice'>
+                    <div class='Answerindex__MultipleChoice'>A.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <input id='" + ques.QuestionId + "1' class='QuestionQuiz1' type='radio' value='1' name='MultiAnswer' />
+                        <label for='" + ques.QuestionId + "1' class='Option__MultipleChoice_return labelforQ1'>@Model.Quiz.Quiz1</label>
+                    </div>
+                </div>
+            </li>
+            <li class='MultiChoice__Answer__cover multianswer2'>
+                <div class='Answerbox__MultipleChoice'>
+                    <div class='Answerindex__MultipleChoice'>B.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <input id='" + ques.QuestionId + "2' class='QuestionQuiz2' type='radio' value='2' name='MultiAnswer' />
+                        <label for='" + ques.QuestionId + "2' class='Option__MultipleChoice_return labelforQ2'>@Model.Quiz.Quiz2</label>
+                    </div>
+                </div>
+            </li>
+            <li class='MultiChoice__Answer__cover multianswer3'>
+                <div class='Answerbox__MultipleChoice'>
+                    <div class='Answerindex__MultipleChoice'>C.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <input id='" + ques.QuestionId + "3' class='QuestionQuiz3' type='radio' value='3' name='MultiAnswer' />
+                        <label for='" + ques.QuestionId + "3' class='Option__MultipleChoice_return labelforQ3'>@Model.Quiz.Quiz3</label>
+                    </div>
+                </div>
+            </li>
+            <li class='MultiChoice__Answer__cover multianswer4'>
+                <div class='Answerbox__MultipleChoice'>
+                    <div class='Answerindex__MultipleChoice'>D.</div>
+                    <div class='radiodiv__MultipleChoice'>
+                        <input id='" + ques.QuestionId + "4' class='QuestionQuiz4' type='radio' value='4' name='MultiAnswer' />
+                        <label for='" + ques.QuestionId + "4' class='Option__MultipleChoice_return labelforQ4'>@Model.Quiz.Quiz4</label>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

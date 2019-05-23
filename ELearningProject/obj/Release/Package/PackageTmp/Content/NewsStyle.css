@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.nav{
+    position: relative;
+    height: 96px;
+}
+
+.nav__left{
+    position: absolute;
+    left: 4%;
+}
+
+.nav__direction{
+    position: absolute;
+    left: 43% !important;
+}
+
+.nav__right{
+    position: absolute;
+    right: 5%;
+}

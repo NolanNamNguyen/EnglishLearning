@@ -1,0 +1,331 @@
+﻿@using ELearningProject.Models
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    int WebUserID = int.Parse(Request.Cookies["WebUserID"].Value);
+    Web_user User = db.Web_Users.Find(WebUserID);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- CSS -->
+    <!-- Import Icon Packs -->
+    <link rel="stylesheet" href="~/assetnewsindex/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assetnewsindex/css/elegent-icons.css">
+
+    <!-- Import External Scrpit CSS Files -->
+    <link rel="stylesheet" href="~/assetnewsindex/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assetnewsindex/css/owl.carousel.css">
+
+    <!-- Import Template CSS Files -->
+    <link href="~/Content/NewsStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assetnewsindex/css/style.css">
+    <link rel="stylesheet" href="~/assetnewsindex/css/header.css">
+    <link rel="stylesheet" href="~/assetnewsindex/css/themes.css">
+    <link rel="stylesheet" href="~/assetnewsindex/css/responsive.css">
+
+    <link rel="stylesheet" href="~/Content/stylestudent.css">
+    <link rel="stylesheet" href="~/Content/AnswerPuzzelVideo.css">
+    <link href="~/Content/PuzzleGame.css" rel="stylesheet" />
+    <link href="~/Content/Teacher.css" rel="stylesheet" />
+    <link href="~/Content/MultiChoice.css" rel="stylesheet" />
+    <link href="~/Content/EditProfile.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/HomeRedirect.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="@Url.Action("Index")" class="nav__left">
+            <img id="ABCLogo" src="~/Content/Images/logo2.svg" alt="" class="nav__logo">
+            <div class="nav__details">
+                <div href="@Url.Action("Index")" class="nav__name heading-1">ABC English</div>
+                <div class="nav__text">The best way to improve your listening skills</div>
+            </div>
+        </a>
+        <div class="nav__direction">
+            <ul class="nav__direciotn__ul">
+                <li class="nav_direction__item">
+                    <a href="#" class="nav_div_bigitem">
+                        Tasks
+                    </a>
+                    <ul class="nav__direction__subitemCover">
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon">
+                                    <svg width="22px" height="24px" viewBox="0 0 22 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+                                        <title>Grammar train</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <defs></defs>
+                                        <g id="Иконки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-799.000000, -1005.000000)">
+                                            <g id="Grammar-train" transform="translate(799.000000, 1005.000000)" fill="#333333">
+                                                <g id="shapka_examen-copy">
+                                                    <g id="Group-23" transform="translate(11.000000, 6.000000)">
+                                                        <rect id="Rectangle-34" x="0" y="0" width="7" height="2"></rect>
+                                                        <rect id="Rectangle-34-Copy-2" x="0" y="5" width="7" height="2"></rect>
+                                                        <rect id="Rectangle-34-Copy-3" x="0" y="10" width="7" height="2"></rect>
+                                                    </g>
+                                                    <path d="M2,24 L0,24 L0,0 L2,0 L20,0 L22,0 L22,24 L20,24 L2,24 Z M2,22 L20,22 L20,2 L2,2 L2,22 Z" id="Combined-Shape"></path>
+                                                </g>
+                                                <polygon id="Path-35" fill-rule="nonzero" points="7.94766983 4.23784267 9.36188339 5.65205623 6.01052662 9.00341301 3.60526328 6.82956983 4.94629344 5.34577803 5.94085958 6.24465292"></polygon>
+                                                <polygon id="Path-35-Copy" fill-rule="nonzero" points="7.67189147 9.29289322 9.08610503 10.7071068 5.73474825 14.0584636 3.32948492 11.8846204 4.67051508 10.4008286 5.66508122 11.2997035"></polygon>
+                                                <path d="M6.37042982,16.9371876 L4.99280796,16.9719767 L5.66508122,16.2997035 L6.37042982,16.9371876 Z M7.67189147,14.2928932 L9.08610503,15.7071068 L5.73474825,19.0584636 L3.32948492,16.8846204 L4.67051508,15.4008286 L5.66508122,16.2997035 L7.67189147,14.2928932 Z" id="Path-35-Copy-2" fill-rule="nonzero"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    Quiz Test
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25">
+                                        <g fill="none" fill-rule="evenodd" stroke="#333" stroke-width="2">
+                                            <path d="M26 12c0-6.075-4.925-11-11-11S4 5.925 4 12"></path>
+                                            <path stroke-linecap="square" d="M4 12.5v1M26 12.5v1"></path>
+                                            <path d="M4 15h4v9H4a3 3 0 0 1-3-3v-3a3 3 0 0 1 3-3zM22 15h4a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-4v-9z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    Audio Test
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon">
+                                    <svg width="32" height="30" viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g fill="#333">
+                                                <path d="M4 12h7v2H4zM4 17h7v2H4zM4 22h14v2H4z"></path>
+                                            </g>
+                                            <path stroke="#333" stroke-width="2" d="M17.9 16.97l-3.536.708.707-3.536 12.02-12.02 2.83 2.828z"></path>
+                                            <path fill="#333" d="M25.677 7.778l-1.414-1.414 1.414-1.415 1.415 1.415zM2 28h18v-8.887l2-2V30H0V6h18.97l-2 2H2v20z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name subitem_name_2line">
+                                    Grammar trainer
+                                </div>
+                            </a>
+                        </li>
+                        <li class="desc__Task">
+                            <div>
+                                <p class="subitem__desc__text">
+                                    This is a good line in Pursuit of Happyness: "don't let any body tell that you can or can't do something".
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_direction__item">
+                    <a href="#" class="nav_div_bigitem">
+                        Games
+                    </a>
+                    <ul class="nav__direction__subitemCover">
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon sub_item_puzzle_icon">
+                                    <img src="~/Content/Images/puzzle-svgrepo-com.svg" />
+                                </div>
+                                <div class="subitem_name">
+                                    Puzzle Games
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+
+                                <div class="subitem_icon">
+                                    <svg width="32" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 26">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M9.633 17.781A4.639 4.639 0 0 0 9 17a4.639 4.639 0 0 0-.781-.633L24.5.086 25.914 1.5 9.633 17.781zm-3.426 3.426L2 25.414.586 24l4.207-4.207 1.414 1.414z" fill="#333" fill-rule="nonzero"></path>
+                                            <path d="M8.5 23.5c1.953-1.953 2.453-4.547.5-6.5-1.953-1.953-4.547-1.453-6.5.5l6 6z" stroke="#333" stroke-width="2" fill="#FFF"></path>
+                                            <path d="M23.781 16.367c-.269.172-.53.382-.781.633-.25.25-.461.512-.633.781L6.086 1.5 7.5.086l16.281 16.281zm3.426 3.426L31.414 24 30 25.414l-4.207-4.207 1.414-1.414z" fill="#333" fill-rule="nonzero"></path>
+                                            <path d="M29.5 17.5c-1.953-1.953-4.547-2.453-6.5-.5-1.953 1.953-1.453 4.547.5 6.5l6-6z" stroke="#333" stroke-width="2" fill="#FFF"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    Duel of Minds
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="23" viewBox="0 0 29 23">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <g stroke="#333" stroke-width="2" transform="translate(1 1)">
+                                                <rect width="27" height="16" y="5" rx="2"></rect>
+                                                <path d="M12 0h3a3 3 0 0 1 3 3v2H9V3a3 3 0 0 1 3-3z"></path>
+                                            </g>
+                                            <path fill="#333" d="M5 7h2v14H5zM22 7h2v14h-2z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    Word Miner
+                                </div>
+                            </a>
+                        </li>
+                        <li class="desc__Games">
+                            <div>
+                                <p class="subitem__desc__text">
+                                    This is a good line in Pursuit of Happyness: "don't let any body tell that you can or can't do something".
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav_direction__item">
+                    <a href="#" class="nav_div_bigitem">
+                        Words
+                    </a>
+                    <ul class="nav__direction__subitemCover">
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="24" viewBox="0 0 38 24">
+                                        <g fill="none" fill-rule="evenodd" stroke="#333" stroke-width="2" transform="translate(1 1)">
+                                            <path d="M8 8h20v6H8z"></path>
+                                            <rect width="4" height="22" x="4" rx="2"></rect>
+                                            <rect width="4" height="22" x="28" rx="2"></rect>
+                                            <rect width="4" height="14" y="4" rx="2"></rect>
+                                            <rect width="4" height="14" x="32" y="4" rx="2"></rect>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    VolcaBulary
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="desc__Words">
+                            <div>
+                                <p class="subitem__desc__text">
+                                    same bed but i feel it's a little bit bigger now
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav_direction__item">
+                    <a href="#" class="nav_div_bigitem">
+                        Pod Cast
+                    </a>
+                    <ul class="nav__direction__subitemCover">
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon pudcast_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35">
+                                        <path fill="none" d="M0 .1h40v35H0z"></path>
+                                        <path d="M28.1 17.9l-3.3-3.5L20 .9l-4.9 13.5-3.3 3.5h-1v16.5h18.4V17.9h-1.1zM20 6.8l2.6 7.2h-5.2L20 6.8zM16.4 16h7.3l1.8 1.9H14.6l1.8-1.9zm10.8 16.4H12.8V19.9h14.4v12.5zm-7.2-.8c3 0 5.5-2.5 5.5-5.5S23 20.7 20 20.7s-5.5 2.5-5.5 5.5 2.5 5.4 5.5 5.4zm0-8.9c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5zm2.6 4.5H19v-3.8h2v1.8h1.6v2z" fill="#333"></path>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    British
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_direction__subitem">
+                            <a class="nav_dir_subitem_link">
+                                <div class="subitem_icon pudcast_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35">
+                                        <path fill="none" d="M0 0h40v35H0z"></path>
+                                        <path d="M37.4 23.6l-6.3-3.4 6.3-4.5c.4-.3.6-.9.4-1.4s-.7-.8-1.2-.7l-7.7.8L30.7 6c.1-.5-.1-1-.6-1.3-.5-.3-1-.2-1.4.2l-5.4 5.5L21.2 3c-.1-.5-.6-.8-1.1-.8-.5 0-1 .4-1.1.9l-2 7.5L11.3 5c-.4-.4-.9-.5-1.4-.2-.5.2-.7.7-.6 1.2l1.8 8.3-7.6-.9c-.5 0-1 .3-1.2.7-.2.5 0 1 .4 1.4L8.8 20l-6.2 3.5c-.5.3-.7.8-.6 1.3.1.5.6.9 1.1.9l11.2.1v.6c0 3.7 2.3 6.3 5.5 6.3h5.5v-6.9l11.6-.1c.5 0 1-.4 1.1-.9.1-.4-.1-1-.6-1.2zm-3.7-7.8l-4.8 3.5-.2.2c-.2-1.1-.6-2.1-1.2-3l6.2-.7zm-5.6-7.3l-1.5 6.4c0 .1-.1.3-.1.5-.9-.9-2-1.7-3.2-2.1.1-.1.2-.1.4-.3l4.4-4.5zm-8-2l1.7 6v.1c0 .1.1.2.1.3-.6-.1-1.3-.2-2-.2-.6 0-1.1.1-1.6.1 0-.1.1-.2.1-.3l1.7-6zM16.5 13l.2.2c-1.4.5-2.5 1.3-3.5 2.3.1-.3 0-.6 0-.7l-1.4-6.5 4.7 4.7zM6.3 15.8l5.9.7h.4l-.1.1c-.6.9-1 1.8-1.1 2.9l-5.1-3.7zm4.4 5.5c.1-.1.3-.2.5-.3 0 1.1.3 2.1.7 2.9H6.2l4.5-2.6zm12.6 9.5h-3.5c-2.1 0-3.5-1.7-3.5-4.3v-2.3h2.1v3.3h2v-5.2h-4.1v-1.8h7v10.3zm-8.9-12.4v5.5h-.1c-.7-.9-1.1-1.8-1.1-3 0-3.5 3.1-6.3 6.8-6.3s6.8 2.8 6.8 6.3c0 .8-.2 1.6-.5 2.4l-.1.2c0 .1-.1.2-.2.4h-.7v-5.5H14.4zm13.8 5.5c.4-.9.6-1.8.6-2.7.1 0 .1.1.2.1l4.7 2.6h-5.5z" fill="#333"></path>
+                                    </svg>
+                                </div>
+                                <div class="subitem_name">
+                                    American
+                                </div>
+                            </a>
+                        </li>
+                        <li class="desc__PodCast">
+                            <div>
+                                <p class="subitem__desc__text">
+                                    some people want diamond rings some just want everything
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__right">
+            <div class="nav__group">
+                <img src="~/Content/Images/calendar.svg" alt="" class="nav__icon">
+                <a href="#" class="nav__subject">Personal Plan</a>
+            </div>
+            <div class="nav__group">
+                <img src="~/Content/Images/documents-button.svg" alt="" class="nav__icon">
+                <a href="#" class="nav__subject">5</a>
+            </div>
+            <div class="nav__profile">
+                <img src="@User.UserImage" alt="" class="nav__avatar">
+                <div class="nav__popup">
+                    <div class="nav__popup-box-1">
+                        <img src="@User.UserImage" alt="" class="nav__avatar-2">
+                        <div class="nav__popup-userinfo">
+                            <p class="nav__popup-username">@User.Name</p>
+                            <img src="~/Content/Images/creative.svg" alt="" class="nav__popup-puzzle">
+                            <p class="nav__popup-puzzle-text">x3</p>
+                        </div>
+                    </div>
+                    <div class="nav__popup-box-2">
+                        <div class="nav__popup-menu">
+                            <img src="~/Content/Images/settings.svg" alt="" class="nav__popup-menu-icon">
+                            <a href="@Url.Action("EditProfile","Account")" class="nav__popup-menu-title">Edit Profile</a>
+                        </div>
+                    </div>
+                    <div class="nav__popup-box-3">
+                        <div class="nav__popup-menu">
+                            <img src="~/Content/Images/logout.png" alt="" class="nav__popup-menu-icon">
+                            <a href="@Url.Action("Index", "Home")" class="nav__popup-menu-title">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <footer class="footer" id="contact">
+        <a href="#" class="nav__name heading-1 footer__logo">ABC English</a>
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#home" class="footer__link">home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#projects" class="footer__link">projects</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__details">
+            <p class="footer__text">Living, learning, & leveling up one day at a time.</p>
+        </div>
+    </footer>
+</body>
+</html>
