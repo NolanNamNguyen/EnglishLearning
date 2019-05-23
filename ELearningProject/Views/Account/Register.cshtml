@@ -98,10 +98,11 @@
                 @Html.EditorFor(m => m.Birthday, new { htmlAttributes = new { @class = "login__input", @placeholder = "Birthday" } })
                 @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "login__input", @placeholder = "Your Name" } })
                 <div>
-                    @*@Html.EditorFor(m => m.AsTeacher, new { htmlAttributes = new { @class = "checkmark" } })*@
-                    <label>
+                    @Html.EditorFor(m => m.AsTeacher, new { htmlAttributes = new { @class = "checkmark" } })
+                    @*<label>
                         <input type="checkbox" name="check" /><span class="label-text"></span>
-                    </label>
+                    </label>*@
+                    @*<label>Login As Teacher</label>*@
                     @Html.ValidationMessageFor(m => m.AsTeacher, "", new { @class = "text-danger" })
                     <span>&nbsp;</span>
                     <p class="label" style="display:inline; position:absolute; left: 6%;">Login as a teacher</p>

@@ -389,7 +389,6 @@ namespace ELearningProject.Controllers
 
         //Edit Profile Section
 
-        [AllowAnonymous]
         public ActionResult EditProfile()
         {
             var WebUserID = int.Parse(Request.Cookies["WebUserID"].Value);
@@ -414,7 +413,7 @@ namespace ELearningProject.Controllers
         {
             ApplicationDbContext db = new ApplicationDbContext();
             var allowedExtensions = new[] {
-            ".Jpg", ".png", ".jpg", "jpeg"
+            ".Jpg", ".png", ".jpg", "jpeg",".JPG",".PNG",".JPEG"
             };
 
             int webUserID = int.Parse(Request.Cookies["WebUserID"].Value);
