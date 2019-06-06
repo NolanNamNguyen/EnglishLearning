@@ -29,7 +29,7 @@ namespace ELearningProject
             {
 
                 // first we create Admin rool   
-                var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
+                var role = new IdentityRole();
                 role.Name = "Admin";
                 roleManager.Create(role);
 
@@ -54,7 +54,7 @@ namespace ELearningProject
             // Creating Student role    
             if (!roleManager.RoleExists("Student"))
             {
-                var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
+                var role = new IdentityRole();
                 role.Name = "Student";
                 roleManager.Create(role);
 
@@ -63,7 +63,7 @@ namespace ELearningProject
             // Creating Teacher role    
             if (!roleManager.RoleExists("Teacher"))
             {
-                var role = new Microsoft.AspNet.Identity.EntityFramework.IdentityRole();
+                var role = new IdentityRole();
                 role.Name = "Teacher";
                 roleManager.Create(role);
 

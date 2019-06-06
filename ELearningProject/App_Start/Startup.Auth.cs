@@ -64,8 +64,8 @@ namespace ELearningProject
             //    ClientSecret = "pMUFVEuN15SBSpsk_WEIabnU"
             //});
             app.UseGoogleAuthentication(
-         clientId: "829365206443-o601acugfn3hpb1a0ubqbgvqvmuf5an8.apps.googleusercontent.com",
-         clientSecret: "pMUFVEuN15SBSpsk_WEIabnU");
+                clientId: "829365206443-o601acugfn3hpb1a0ubqbgvqvmuf5an8.apps.googleusercontent.com",
+                clientSecret: "pMUFVEuN15SBSpsk_WEIabnU");
         }
     }
 }
