@@ -647,7 +647,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_shared_admin.cshtml" />
     <Content Include="Views\Student\Index.cshtml" />
-    <Content Include="Views\Student\PuzzelEnglish.cshtml" />
     <Content Include="Views\Teacher\Index.cshtml" />
     <Content Include="Views\Teacher\CreateTest.cshtml" />
     <Content Include="Views\Shared\_StudentLayout.cshtml" />
